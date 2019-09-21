@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2019.  Terry All rights Reserved.
+ */
+
 package com.terry.validparentheses;
 
 /**
@@ -16,20 +20,32 @@ package com.terry.validparentheses;
  */
 public class Solution {
     public boolean isValid(String s) {
-        if (s.length() % 2 != 0) {
+        // 不是2的整数倍一定是不匹配
+        if (s.length() % 2 == 1) {
             return false;
         }
-        char [] cache = new char[s.length()/2];
         int a = 0;
+        char [] cache = new char[s.length()/2];
         for (int i = 0; i < s.length(); i++) {
-            if (s.charAt(i) == '(' || s.charAt(i) == '{' || s.charAt(i) == '[') {
-                cache[a] = s.charAt(i);
-                a++;
-            } else if (s.charAt(i) == cache[a] + 1 ||s.charAt(i) == cache[a] + 2) {
+            if (s.charAt(i) == '(' || s.charAt(i) == '[' || s.charAt(i) == '{') {
+                // 超过一半数目的左括号，说明右括号一定不够配对，返回失败
+                if (a == s.length()/2) {
+                    return false;
+                }
+                cache[a++] = s.charAt(i);
+            }
+            else if ((s.charAt(i) == ')' || s.charAt(i) == ']' || s.charAt(i) == '}') && a == 0) {
+                // 出现不存在左括号的配对的右括号，返回失败
+                return false;
+            }
+            else if (s.charAt(i) == 1 + cache[a-1] || s.charAt(i) == 2 + cache[a-1]) {
+                // ')'和'('之间只差1，']'、'}'和'['、'{'只差2
                 a--;
             }
-            return false;
+            else
+                return false;
         }
+        // a为0说明完全匹配，否则不匹配
         return a == 0;
     }
 }
