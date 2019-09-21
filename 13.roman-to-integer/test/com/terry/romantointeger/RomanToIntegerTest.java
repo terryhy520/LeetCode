@@ -30,4 +30,11 @@ public class RomanToIntegerTest {
         RomanToInteger romanToInteger = new RomanToInteger();
         assertEquals(1994, romanToInteger.romanToInt(s));
     }
+
+    @Test
+    public void testRomanToInt04() {
+        String s = "MCMXLIV";
+        RomanToInteger romanToInteger = new RomanToInteger();
+        assertEquals(1944, romanToInteger.romanToInt(s));
+    }
 }
