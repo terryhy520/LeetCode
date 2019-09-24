@@ -39,6 +39,44 @@ package com.terry.zigzagconversion;
  */
 public class ZigzagConversion {
     public String convert(String s, int numRows) {
+        if (s == null) {
+            return null;
+        }
 
+        if (s.isEmpty()) {
+            return "";
+        }
+
+        if (s.length() == 1 || numRows == 1) {
+            return s;
+        }
+
+        int length = s.length();
+        int y = 0;
+
+        char [] resultArr = new char[length];
+        for (int i = 1; i <= numRows; i++) {
+            if (i == 1 || i == numRows) {
+                for (int j = i - 1; j < length; j += 2 * (numRows - 1)) {
+                    resultArr[y++] = s.charAt(j);
+                }
+            }
+            else {
+                int tag = 0;
+                int j = i - 1;
+                while (j < length) {
+                    resultArr[y++] = s.charAt(j);
+                    if (tag % 2 == 0) {
+                        tag++;
+                        j += 2 * (numRows - i);
+                    }
+                    else {
+                        tag ++;
+                        j += 2 * (i - 1);
+                    }
+                }
+            }
+        }
+        return new String(resultArr);
     }
 }
