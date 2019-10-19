@@ -2,7 +2,7 @@
  * Copyright (c) 2019.  Terry All rights Reserved.
  */
 
-package com.terry.romantointeger;
+package com.terry.sudoku.romantointeger;
 
 
 import org.junit.Test;

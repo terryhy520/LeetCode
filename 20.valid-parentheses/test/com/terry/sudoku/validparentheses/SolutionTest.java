@@ -2,7 +2,7 @@
  * Copyright (c) 2019.  Terry All rights Reserved.
  */
 
-package com.terry.validparentheses;
+package com.terry.sudoku.validparentheses;
 
 import org.junit.Test;
 

@@ -2,7 +2,7 @@
  * Copyright (c) 2019.  Terry All rights Reserved.
  */
 
-package com.terry.validparentheses;
+package com.terry.sudoku.validparentheses;
 
 /**
  * 给定一个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效。

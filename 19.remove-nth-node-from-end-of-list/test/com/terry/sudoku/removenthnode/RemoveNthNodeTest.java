@@ -2,7 +2,7 @@
  * Copyright (c) 2019.  Terry All rights Reserved.
  */
 
-package com.terry.removenthnode;
+package com.terry.sudoku.removenthnode;
 
 import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
