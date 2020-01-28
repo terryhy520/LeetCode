@@ -4,6 +4,9 @@
 
 package com.terry.sudoku.removenthnode;
 
+
+import com.terry.listutils.ListNode;
+
 /**
  * 给定一个链表，删除链表的倒数第 n 个节点，并且返回链表的头结点。
  *
@@ -49,7 +52,7 @@ public class RemoveNthNode {
         return head;
     }
 
-    public static int [] displayListNode(ListNode head, int n) {
+    public static int [] displayNListNode(ListNode head, int n) {
         ListNode q = head;
         int [] result = new int[n];
         int i = 0;

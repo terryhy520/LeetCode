@@ -4,6 +4,7 @@
 
 package com.terry.sudoku.removenthnode;
 
+import com.terry.listutils.ListNode;
 import org.junit.Test;
 import static org.junit.Assert.assertArrayEquals;
 
@@ -23,7 +24,7 @@ public class RemoveNthNodeTest {
         listNode5.next = null;
         RemoveNthNode removeNthNode = new RemoveNthNode();
         ListNode result = removeNthNode.removeNthFromEnd(listNode1, 1);
-        assertArrayEquals(new int[]{1,2,3,4}, RemoveNthNode.displayListNode(result, 4));
+        assertArrayEquals(new int[]{1,2,3,4}, RemoveNthNode.displayNListNode(result, 4));
     }
 
     @Test
@@ -40,7 +41,7 @@ public class RemoveNthNodeTest {
         listNode5.next = null;
         RemoveNthNode removeNthNode = new RemoveNthNode();
         ListNode result = removeNthNode.removeNthFromEnd(listNode1, 2);
-        assertArrayEquals(new int[]{1,2,3,5}, RemoveNthNode.displayListNode(result, 4));
+        assertArrayEquals(new int[]{1,2,3,5}, RemoveNthNode.displayNListNode(result, 4));
     }
 
     @Test
@@ -57,7 +58,7 @@ public class RemoveNthNodeTest {
         listNode5.next = null;
         RemoveNthNode removeNthNode = new RemoveNthNode();
         ListNode result = removeNthNode.removeNthFromEnd(listNode1, 5);
-        assertArrayEquals(new int[]{2,3,4,5}, RemoveNthNode.displayListNode(result, 4));
+        assertArrayEquals(new int[]{2,3,4,5}, RemoveNthNode.displayNListNode(result, 4));
     }
 
     @Test
@@ -74,6 +75,6 @@ public class RemoveNthNodeTest {
         listNode5.next = null;
         RemoveNthNode removeNthNode = new RemoveNthNode();
         ListNode result = removeNthNode.removeNthFromEnd(listNode1, 4);
-        assertArrayEquals(new int[]{1,3,4,5}, RemoveNthNode.displayListNode(result, 4));
+        assertArrayEquals(new int[]{1,3,4,5}, RemoveNthNode.displayNListNode(result, 4));
     }
 }
