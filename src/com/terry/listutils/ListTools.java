@@ -6,10 +6,11 @@ package com.terry.listutils;
 public class ListTools {
     /**
      * switch linked listNode to array
+     *
      * @param head the listNode pointer
      * @return the array of the listNode values
      */
-    public static int [] displayListNode(ListNode head) {
+    public static int[] displayListNode(ListNode head) {
         ListNode node = head;
         int nodeLength = 0;
         while (node != null) {
@@ -21,13 +22,14 @@ public class ListTools {
 
     /**
      * switch linked listNode to array
+     *
      * @param head the listNode pointer
-     * @param n the length of the listNode
+     * @param n    the length of the listNode
      * @return the array of the listNode values
      */
-    public static int [] displayNListNode(ListNode head, int n) {
+    public static int[] displayNListNode(ListNode head, int n) {
         ListNode q = head;
-        int [] result = new int[n];
+        int[] result = new int[n];
         int i = 0;
         while (q != null) {
             result[i++] = q.val;
@@ -38,6 +40,7 @@ public class ListTools {
 
     /**
      * initialize a n length listNode with the ith value i
+     *
      * @param n the length of listNode to be initialized
      * @return the head node of the listNode
      */

@@ -11,13 +11,13 @@ import java.util.Map;
  * @since 2019-09-18
  */
 public class TwoSum {
-    public int[] twoSum(int[] nums, int target) {
-        Map leftNums = new HashMap(nums.length);
-        for (int i = 0; i < nums.length; i++) {
-            if (leftNums.containsKey(nums[i])) {
-                return new int[]{(int)leftNums.get(nums[i]),i};
+    public int[] twoSum(int[] numbs, int target) {
+        Map leftNumbs = new HashMap(numbs.length);
+        for (int i = 0; i < numbs.length; i++) {
+            if (leftNumbs.containsKey(numbs[i])) {
+                return new int[]{(int)leftNumbs.get(numbs[i]),i};
             }
-            leftNums.put(target - nums[i], i);
+            leftNumbs.put(target - numbs[i], i);
         }
         return null;
     }
