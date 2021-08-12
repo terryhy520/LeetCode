@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/1.two-sum/1.two-sum.iml" filepath="$PROJECT_DIR$/1.two-sum/1.two-sum.iml" />
-      <module fileurl="file://$PROJECT_DIR$/13.roman-to-integer/13.roman-to-integer.iml" filepath="$PROJECT_DIR$/13.roman-to-integer/13.roman-to-integer.iml" />
-      <module fileurl="file://$PROJECT_DIR$/20.valid-parentheses/20.valid-parentheses.iml" filepath="$PROJECT_DIR$/20.valid-parentheses/20.valid-parentheses.iml" />
-      <module fileurl="file://$PROJECT_DIR$/25.reverse-nodes-in-k-group/25.reverse-nodes-in-k-group.iml" filepath="$PROJECT_DIR$/25.reverse-nodes-in-k-group/25.reverse-nodes-in-k-group.iml" />
-      <module fileurl="file://$PROJECT_DIR$/37.sudoku-solver/37.sudoku-solver.iml" filepath="$PROJECT_DIR$/37.sudoku-solver/37.sudoku-solver.iml" />
-      <module fileurl="file://$PROJECT_DIR$/6.zigzag-conversion/6.zigzag-conversion.iml" filepath="$PROJECT_DIR$/6.zigzag-conversion/6.zigzag-conversion.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/LeetCode.iml" filepath="$PROJECT_DIR$/.idea/LeetCode.iml" />
     </modules>
   </component>
