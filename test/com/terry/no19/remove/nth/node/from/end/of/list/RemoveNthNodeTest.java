@@ -1,11 +1,13 @@
+package com.terry.no19.remove.nth.node.from.end.of.list;
+
 /*
  * Copyright (c) 2019.  Terry All rights Reserved.
  */
 
-package com.terry.sudoku.removenthnode;
 
 import com.terry.listutils.ListNode;
 import org.junit.Test;
+
 import static org.junit.Assert.assertArrayEquals;
 
 public class RemoveNthNodeTest {

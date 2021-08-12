@@ -2,7 +2,7 @@
  * Copyright (c) 2019.  Terry All rights Reserved.
  */
 
-package com.terry.sudoku.removenthnode;
+package com.terry.no19.remove.nth.node.from.end.of.list;
 
 
 import com.terry.listutils.ListNode;
