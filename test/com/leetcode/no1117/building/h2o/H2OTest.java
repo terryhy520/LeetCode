@@ -1,4 +1,4 @@
-package com.leetcode.no1117.generate.h2o;
+package com.leetcode.no1117.building.h2o;
 
 import org.junit.Test;
 
