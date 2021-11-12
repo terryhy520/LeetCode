@@ -6,7 +6,7 @@ import java.util.function.IntConsumer;
 
 import static org.junit.Assert.*;
 
-public class ZeroEvenOddTest {
+public class ZeroEvenOdd2Test {
 
     @Test
     public void test01() {
@@ -17,23 +17,13 @@ public class ZeroEvenOddTest {
             }
         };
 
-        ZeroEvenOdd zeroEvenOdd = new ZeroEvenOdd(9);
+        ZeroEvenOdd2 zeroEvenOdd2 = new ZeroEvenOdd2(9);
+
         Thread threadZero = new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
-                    zeroEvenOdd.zero(intConsumer);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-
-        Thread threadOdd = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    zeroEvenOdd.odd(intConsumer);
+                    zeroEvenOdd2.zero(intConsumer);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -44,7 +34,18 @@ public class ZeroEvenOddTest {
             @Override
             public void run() {
                 try {
-                    zeroEvenOdd.even(intConsumer);
+                    zeroEvenOdd2.even(intConsumer);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
+        Thread threadOdd = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    zeroEvenOdd2.odd(intConsumer);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
